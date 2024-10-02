@@ -7,7 +7,7 @@ import com.gcr.listeners.RetryAnalyzer;
 import com.gcr.reuse.Commonfunctions;
 
 public class TC1 extends StartBrowser{
-  @Test(retryAnalyzer = RetryAnalyzer.class)
+  @Test(retryAnalyzer = RetryAnalyzer.class)//this will retry
   public void SauceLogin_Logut() throws Exception {
 	  Commonfunctions cf = new Commonfunctions();
 	  cf.login();
